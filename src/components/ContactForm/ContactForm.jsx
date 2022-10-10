@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { nanoid } from 'nanoid';
 import css from './ContactForm.module.css';
-import { FaUserPlus } from 'react-icons/fa';
 
 class ContactForm extends Component {
     state = {
@@ -57,7 +56,7 @@ class ContactForm extends Component {
                     required
                     onChange={this.handleChange}
                 />
-                <button className={css.formButton} type="submit">Add contact <FaUserPlus /></button>
+                <button className={css.formButton} type="submit">Add contact</button>
             </form>
         )
     }
